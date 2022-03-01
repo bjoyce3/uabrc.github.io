@@ -1,0 +1,11 @@
+:root {
+  --md-primary-fg-color: #1e6b52;
+}
+
+.md-grid {
+  max-width: 100%;
+}
+
+html .md-footer-meta.md-typeset a.supportemail {
+  color: #aaaaff;
+}
