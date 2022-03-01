@@ -1,20 +1,20 @@
 # Guest Instructions
 
-These instructions are for guests who have been registered by UAB faculty and staff to use internal UAB resources. Once a request for a XIAS account has been made by your UAB sponsor, you will need to follow these instructions to complete the XIAS registration and obtain access to UAB resources. All of the links used on this page are available at the [UAB XIAS Guest Users](https://apps.idm.uab.edu/xias/top) page.
+These instructions are for guests who have been registered by UAB faculty and staff to use internal UAB resources. Once a request for a XIAS account has been made by your UAB sponsor, you will need to follow these instructions to complete the XIAS registration and obtain access to UAB resources. All of the links used on this page are available at the [UAB XIAS Guest Researchers](https://apps.idm.uab.edu/xias/top) page.
 
 ## Create Account
 
-1. The first email you receive should be a notification that a request has been made to add you as a XIAS user. This email will include the project(s)/site(s) you're being added to.
+1. The first email you receive should be a notification that a request has been made to add you as a XIAS researcher. This email will include the project(s)/site(s) you're being added to.
 
-    ![!Email notification indicating a request has been made to register the user receiving the email. Contains a list of sites the request has been made for. Additional information is provided regarding the next email.](./images/xias_guest_001.png)
+    ![!Email notification indicating a request has been made to register the researcher receiving the email. Contains a list of sites the request has been made for. Additional information is provided regarding the next email.](./images/xias_guest_001.png)
 
 2. The next email you receive should contain instructions on how to register your account. This email may take an hour or so to arrive after the first. It will contain an invite code that you must enter at the XIAS website, along with the email address used to register you.
 
-    ![!Email with instructions for completing XIAS user registration. The instructions include a link to the UAB XIAS Guest Users page https://apps.idm.uab.edu/xias/top and an invite code for registration.](./images/xias_guest_002.png)
+    ![!Email with instructions for completing XIAS researcher registration. The instructions include a link to the UAB XIAS Guest Researchers page https://apps.idm.uab.edu/xias/top and an invite code for registration.](./images/xias_guest_002.png)
 
-3. Navigate to the link in the email. Please practice good internet hygiene and copy the link text, instead of clicking the link! As of the time of writing the link will be to the [UAB XIAS Guest Users](https://apps.idm.uab.edu/xias/top) page. Once at the main page, click the "Enter Invite or Reset Code" link.
+3. Navigate to the link in the email. Please practice good internet hygiene and copy the link text, instead of clicking the link! As of the time of writing the link will be to the [UAB XIAS Guest Researchers](https://apps.idm.uab.edu/xias/top) page. Once at the main page, click the "Enter Invite or Reset Code" link.
 
-    ![!Main UAB XIAS Guest Users page. Links are in the menu at left and include the "Enter Invite or Reset Code" link.](./images/xias_guest_003.png)
+    ![!Main UAB XIAS Guest Researchers page. Links are in the menu at left and include the "Enter Invite or Reset Code" link.](./images/xias_guest_003.png)
 
 4. You will be taken to the "Register XIAS Account" page. Enter the email address used to register you for a XIAS account, and the code from the email you received with registration instructions. Then click proceed.
 
@@ -22,7 +22,7 @@ These instructions are for guests who have been registered by UAB faculty and st
 
 5. Enter your first and last names, then click proceed.
 
-    ![!Form requiring first and last name of the user. A proceed button is highlighted.](./images/xias_guest_006.png)
+    ![!Form requiring first and last name of the researcher. A proceed button is highlighted.](./images/xias_guest_006.png)
 
 6. Enter a password that will be used with your XIAS account. This password can be changed later, and your account can be recovered if the password is lost. Click proceed.
 
@@ -65,6 +65,6 @@ the main page. Once there, follow the instructions on the form.
 ## Guest IT Info
 
 For more information on UAB IT policies and other useful and helpful
-information, please click the "UABIT Guest User info" link.
+information, please click the "UABIT Guest Researcher info" link.
 
 ![!Guest IT Info landing page.](./images/xias_guest_it_info.png)

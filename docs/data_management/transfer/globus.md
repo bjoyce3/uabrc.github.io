@@ -38,12 +38,12 @@ To verify your installation is complete, please visit <https://app.globus.org> a
 
         ![!Globus Collection Search Bookmarks tab showing four bookmarks.](./images/globus_006_bookmarks_tab.png)
 
-    4. The "Your Collections" tab shows all endpoints owned by you. For most users this will be one or more Globus Connect Personal endpoints.
+    4. The "Your Collections" tab shows all endpoints owned by you. For most researchers this will be one or more Globus Connect Personal endpoints.
 
         ![!Globus Collection Search Your Collections tab showing one endpoint.](./images/globus_007_your_collections_tab.png)
 
     5. The "Shared With You" tab shows any private endpoints that have
-        been shared with you by other users, possibly collaborators.
+        been shared with you by other researchers, possibly collaborators.
 
     6. The "More Options" tab will show a brief text on installing
         Globus Connect Personal.
@@ -83,7 +83,7 @@ Between the two "Start" buttons on the "File Manager" page is a "Transfer & Sync
 ### Common Errors
 
 1. File Not Found - This may mean that a file was not readable by Globus. Check that the file hasn't moved or changed names during the transfer. It is recommended to not modify files while they are being transferred by Globus.
-2. Permission Denied - Globus is not able to access the files because permissions do not allow it. For Globus Connect Personal, be sure the containing folder is on the "Accessible Folders" list. Be sure that your user account has access to read the file.
+2. Permission Denied - Globus is not able to access the files because permissions do not allow it. For Globus Connect Personal, be sure the containing folder is on the "Accessible Folders" list. Be sure that your researcher account has access to read the file.
 
 ### More Information
 
@@ -134,24 +134,24 @@ It is NOT RECOMMENDED to make Globus Connect Personal endpoints public as this i
 
     ![!Newly created test endpoint page with Permissions tab selected.](./images/globus_103_shared_permissions.png)
 
-9. Click "Add Permissions -- Share With" to share your endpoint with other users.
+9. Click "Add Permissions -- Share With" to share your endpoint with other researchers.
 
 10. Fill out the form.
 
     ![!Test endpoint Add Permissions Share With form.](./images/globus_104_shared_add_permissions.png)
 
-    1. Optionally enter a path within the shared endpoint or use the Browse button. If you leave the path as just a slash, the entire shared endpoint will be shared with these users.
+    1. Optionally enter a path within the shared endpoint or use the Browse button. If you leave the path as just a slash, the entire shared endpoint will be shared with these researchers.
     2. Select who to share with.
-        1. User - One or more users.
+        1. Researcher - One or more researchers.
         2. Group - All members of a group.
-        3. All Users - All globus users. **Warning! This exposes data publicly!**
-    3. Search for users to add, or a group, depending on your choice above. You should be able to find any globus user using the search box. **Warning! Be certain of which user you are selecting! Check the email domain!**
-    4. If adding users, optionally enter a message so they know why they are being added.
+        3. All Researchers - All globus researchers. **Warning! This exposes data publicly!**
+    3. Search for researchers to add, or a group, depending on your choice above. You should be able to find any globus researcher using the search box. **Warning! Be certain of which researcher you are selecting! Check the email domain!**
+    4. If adding researchers, optionally enter a message so they know why they are being added.
     5. Select permissions. Read is automatically selected and cannot be changed. Write permissions are optional.
 
-11. Click "Add Permission" to add permissions for these users or groups.
+11. Click "Add Permission" to add permissions for these researchers or groups.
     You will be returned to the page for the shared endpoint and should
-    be on the "Permissions" tab and should see the user or group in the
+    be on the "Permissions" tab and should see the researcher or group in the
     table.
 
 ### Deleting a Shared Collection

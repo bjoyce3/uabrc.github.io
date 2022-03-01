@@ -19,7 +19,7 @@ A file browser for the local machine FileZilla is running on is on the left whil
 You can easily connect to a remote site using the QuickConnect bar near the top of the window. You will need to input the following options:
 
 - Host: `sftp://cheaha.rc.uab.edu`
-- Username: your BlazerID or XIAS ID (do NOT include '@uab.edu')
+- Researchername: your BlazerID or XIAS ID (do NOT include '@uab.edu')
 - Password: your BlazerID or XIAS password
 - Port: `22`
 
@@ -29,7 +29,7 @@ Click `Quickconnect` and you will be connected to the remote storage system. The
 
 When connecting in the future, you will be able to select the connection from the dropdown arrow next to the Quickconnect button.
 
-In both the local and remote panes, you can navigate to the directories you are transferring from and to. You only have access to directories you can normally access on Cheaha, so your user space as well as any project directories you have been added to.
+In both the local and remote panes, you can navigate to the directories you are transferring from and to. You only have access to directories you can normally access on Cheaha, so your researcher space as well as any project directories you have been added to.
 
 ### Transferring Data
 

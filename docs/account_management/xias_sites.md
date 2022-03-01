@@ -1,6 +1,6 @@
 # Creating a UAB XIAS Project/Site
 
-XIAS Project/Sites, or simply sites, tie external users to specific resources at UAB. By connecting people to the resource they use, UAB can maintain security and accountability. Creating a site is the first step to giving access to external collaborators, and the process can be thought of as "create once, use many times". All sites must have an expiration date for security reasons. To create a site you'll need at least one Uniform Resource Identifier (URI) relating to resources used by the site. If you aren't sure what URI(s) to list for your site, please contact <UserServices@uab.edu>.
+XIAS Project/Sites, or simply sites, tie external researchers to specific resources at UAB. By connecting people to the resource they use, UAB can maintain security and accountability. Creating a site is the first step to giving access to external collaborators, and the process can be thought of as "create once, use many times". All sites must have an expiration date for security reasons. To create a site you'll need at least one Uniform Resource Identifier (URI) relating to resources used by the site. If you aren't sure what URI(s) to list for your site, please contact <ResearcherServices@uab.edu>.
 
 1. To start go to the [UAB XIAS Project/Site Management Webpage](https://idm.uab.edu/cgi-cas/xrmi/sites).
 
@@ -22,8 +22,8 @@ XIAS Project/Sites, or simply sites, tie external users to specific resources at
 
 4. Click "Add" to submit the form. You should be taken to a page summarizing the created Project/Site.
 
-    ![!Summary page for created site reflecting user entered information.](./images/xias_sites_add_003.png)
+    ![!Summary page for created site reflecting researcher entered information.](./images/xias_sites_add_003.png)
 
-5. When you visit the "Manage Projects/Sites" page in the future, you will see a table with the newly created Project/Site listed. Click "View" to return to the page seen in the previous step. Click "Edit" to return to the form from \[link\]. Click "Users" to manage users for this site.
+5. When you visit the "Manage Projects/Sites" page in the future, you will see a table with the newly created Project/Site listed. Click "View" to return to the page seen in the previous step. Click "Edit" to return to the form from \[link\]. Click "Researchers" to manage researchers for this site.
 
-    ![!Site table with newly created site listed. On that row are three buttons: View, Edit, Users. On the next row is the button New.](./images/xias_sites_add_004.png)
+    ![!Site table with newly created site listed. On that row are three buttons: View, Edit, Researchers. On the next row is the button New.](./images/xias_sites_add_004.png)

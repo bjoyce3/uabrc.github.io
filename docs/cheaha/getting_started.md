@@ -6,7 +6,7 @@ Cheaha is a cluster computing environment for UAB researchers. Information about
 
 To get started using [Cheaha](https://docs.uabgrid.uab.edu/wiki/Cheaha), simply visit our [Open OnDemand](https://docs.uabgrid.uab.edu/wiki/Open_OnDemand) portal at [https://rc.uab.edu](https://rc.uab.edu/). This is the primary entry point for Cheaha and provides access to all cluster services directly from your web browser, including graphical desktops, Jupyter Notebooks, and even the traditional command-line.
 
-If you don't already have an account, you will be prompted to create one the first time you log into the portal. If you are creating an account, please share some of your interests in using Cheaha as this help us understand the science interests of our users.
+If you don't already have an account, you will be prompted to create one the first time you log into the portal. If you are creating an account, please share some of your interests in using Cheaha as this help us understand the science interests of our researchers.
 
 **Please note**: Usage of Cheaha is governed by [UAB's Acceptable Use Policy (AUP)](https://www.uab.edu/policies/content/Pages/UAB-IT-POL-0000004.aspx) for computer resources.
 
@@ -18,7 +18,7 @@ To request an account for an external collaborator, please follow the steps [her
 
 ### Overview
 
-Once your account has been created, you'll receive an email containing your user ID, generally your Blazer ID. You can [log into Cheaha via your web browser](https://rc.uab.edu/) using the new web-based HPC experience.
+Once your account has been created, you'll receive an email containing your researcher ID, generally your Blazer ID. You can [log into Cheaha via your web browser](https://rc.uab.edu/) using the new web-based HPC experience.
 
 You can also log into Cheaha via a traditional SSH client. Most UAB Windows workstations already have an SSH client installed, possibly named **SSH Secure Shell Client** or [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/). Linux and Mac OS X systems should have an SSH client installed by default.
 
@@ -46,7 +46,7 @@ Host cheaha
 Linux systems, regardless of the flavor (RedHat, SuSE, Ubuntu, etc...), should already have an SSH client on the system as part of the default install.
 
 1. Start a terminal (on RedHat click Applications -> Accessories -> Terminal, on Ubuntu Ctrl+Alt+T)
-2. At the prompt, enter the following command to connect to Cheaha (**Replace blazerid with your Cheaha userid**)
+2. At the prompt, enter the following command to connect to Cheaha (**Replace blazerid with your Cheaha researcherid**)
 
 ```bash
 ssh blazerid@cheaha.rc.uab.edu
@@ -57,7 +57,7 @@ ssh blazerid@cheaha.rc.uab.edu
 Mac OS X is a Unix operating system (BSD) and has a built in ssh client.
 
 1. Start a terminal (click Finder, type Terminal and double click on Terminal under the Applications category)
-2. At the prompt, enter the following command to connect to Cheaha (**Replace blazerid with your Cheaha userid**)
+2. At the prompt, enter the following command to connect to Cheaha (**Replace blazerid with your Cheaha researcherid**)
 
 ```bash
 ssh blazerid@cheaha.rc.uab.edu
@@ -72,7 +72,7 @@ There are many SSH clients available for Windows, some commercial and some that 
 [MobaXterm](http://mobaxterm.mobatek.net/) is a free (also available for a price in a Profession version) suite of SSH tools. Of the Windows clients we've used, MobaXterm is the easiest to use and feature complete. [Features](http://mobaxterm.mobatek.net/features.html) include (but not limited to):
 
 - SSH client (in a handy web browser like tabbed interface)
-- Embedded Cygwin (which allows Windows users to run many Linux commands like grep, rsync, sed)
+- Embedded Cygwin (which allows Windows researchers to run many Linux commands like grep, rsync, sed)
 - Remote file system browser (graphical SFTP)
 - X11 forwarding for remotely displaying graphical content from Cheaha
 - Installs without requiring Windows Administrator rights
@@ -115,7 +115,7 @@ SSH Secure Shell is a commercial application that is installed on many Windows w
 | Field                    | Cheaha Settings                      |
 | ------------------------ | ------------------------------------ |
 | **Host name**            | cheaha.rc.uab.edu                    |
-| **User name**            | blazerid (insert your blazerid here) |
+| **Researcher name**            | blazerid (insert your blazerid here) |
 | **Port**                 | 22                                   |
 | **Protocol**             | SSH                                  |
 | **Encryption algorithm** | <Default>                            |
@@ -142,26 +142,26 @@ No matter which client you use to connect to the Cheaha, the first time you conn
 ```bash
 It doesn't appear that you have set up your ssh key.
 This process will make the files:
-     /home/joeuser/.ssh/id_rsa.pub
-     /home/joeuser/.ssh/id_rsa
-     /home/joeuser/.ssh/authorized_keys
+     /home/joeresearcher/.ssh/id_rsa.pub
+     /home/joeresearcher/.ssh/id_rsa
+     /home/joeresearcher/.ssh/authorized_keys
 
 Generating public/private rsa key pair.
-Enter file in which to save the key (/home/joeuser/.ssh/id_rsa):
+Enter file in which to save the key (/home/joeresearcher/.ssh/id_rsa):
 ```
 
-- Enter file in which to save the key (/home/joeuser/.ssh/id_rsa):**Press Enter**
+- Enter file in which to save the key (/home/joeresearcher/.ssh/id_rsa):**Press Enter**
   - Enter passphrase (empty for no passphrase):**Press Enter**
   - Enter same passphrase again:**Press Enter**
 
 ```bash
-Your identification has been saved in /home/joeuser/.ssh/id_rsa.
-Your public key has been saved in /home/joeuser/.ssh/id_rsa.pub.
+Your identification has been saved in /home/joeresearcher/.ssh/id_rsa.
+Your public key has been saved in /home/joeresearcher/.ssh/id_rsa.pub.
 The key fingerprint is:
-f6:xx:xx:xx:xx:dd:9a:79:7b:83:xx:f9:d7:a7:d6:27 joeuser@cheaha.rc.uab.edu
+f6:xx:xx:xx:xx:dd:9a:79:7b:83:xx:f9:d7:a7:d6:27 joeresearcher@cheaha.rc.uab.edu
 ```
 
-#### Users without a blazerid (collaborators from other universities)
+#### Researchers without a blazerid (collaborators from other universities)
 
 - If you were issued a temporary password, enter it (Passwords are CaSE SensitivE!!!) You should see a message similar to this
 
@@ -169,8 +169,8 @@ f6:xx:xx:xx:xx:dd:9a:79:7b:83:xx:f9:d7:a7:d6:27 joeuser@cheaha.rc.uab.edu
 You are required to change your password immediately (password aged)
 WARNING: Your password has expired.
 You must change your password now and login again!
-Changing password for user joeuser.
-Changing password for joeuser
+Changing password for researcher joeresearcher.
+Changing password for joeresearcher
 (current) UNIX password:
 ```
 
@@ -194,11 +194,11 @@ See [Hardware](/Hardware) for more information.
 
 ## Queuing System
 
-All work on Cheaha must be submitted to **our queuing system ([Slurm](https://docs.uabgrid.uab.edu/wiki/Slurm))**. A common mistake made by new users is to run 'jobs' on the login node. This section gives a basic overview of what a queuing system is and why we use it.
+All work on Cheaha must be submitted to **our queuing system ([Slurm](https://docs.uabgrid.uab.edu/wiki/Slurm))**. A common mistake made by new researchers is to run 'jobs' on the login node. This section gives a basic overview of what a queuing system is and why we use it.
 
 ### What is a queuing system?
 
-- Software that gives users fair allocation of the cluster's resources
+- Software that gives researchers fair allocation of the cluster's resources
 - Schedules jobs based using resource requests (the following are commonly requested resources, there are many more that are available)
   - Number of processors (often referred to as "slots")
   - Maximum memory (RAM) required per slot
@@ -215,7 +215,7 @@ All work on Cheaha must be submitted to **our queuing system ([Slurm](https://do
 ### Typical Workflow
 
 - Stage data to $USER_SCRATCH (your scratch directory)
-- Research how to run your code in "batch" mode. Batch mode typically means the ability to run it from the command line without requiring any interaction from the user.
+- Research how to run your code in "batch" mode. Batch mode typically means the ability to run it from the command line without requiring any interaction from the researcher.
 - Identify the appropriate resources needed to run the job. The following are mandatory resource requests for all jobs on Cheaha
   - Maximum memory (RAM) required per slot
   - Maximum runtime
@@ -322,7 +322,7 @@ There are many good text editors available for Windows that have the capability 
 
 #### Example Batch Job Script
 
-A shared cluster environment like Cheaha uses a job scheduler to run tasks on the cluster to provide optimal resource sharing among users. Cheaha uses a job scheduling system call Slurm to schedule and manage jobs. A user needs to tell Slurm about resource requirements (e.g. CPU, memory) so that it can schedule jobs effectively. These resource requirements along with actual application code can be specified in a single file commonly referred as 'Job Script/File'. Following is a simple job script that prints job number and hostname.
+A shared cluster environment like Cheaha uses a job scheduler to run tasks on the cluster to provide optimal resource sharing among researchers. Cheaha uses a job scheduling system call Slurm to schedule and manage jobs. A researcher needs to tell Slurm about resource requirements (e.g. CPU, memory) so that it can schedule jobs effectively. These resource requirements along with actual application code can be specified in a single file commonly referred as 'Job Script/File'. Following is a simple job script that prints job number and hostname.
 
 **Note:**Jobs **must request** the appropriate partition (ex: *--partition=short*) to satisfy the jobs resource request (maximum runtime, number of compute nodes, etc...)
 
@@ -336,7 +336,7 @@ A shared cluster environment like Cheaha uses a job scheduler to run tasks on th
 #SBATCH --time=10:00
 #SBATCH --mem-per-cpu=100
 #SBATCH --mail-type=FAIL
-#SBATCH --mail-user=YOUR_EMAIL_ADDRESS
+#SBATCH --mail-researcher=YOUR_EMAIL_ADDRESS
 
 srun hostname
 srun sleep 60
@@ -361,7 +361,7 @@ When the job script is submitted, Slurm queues it up and assigns it a job number
 
 Login Node (the host that you connected to when you setup the SSH connection to Cheaha) is supposed to be used for submitting jobs and/or lighter prep work required for the job scripts. **Do not run heavy computations on the login node**. If you have a heavier workload to prepare for a batch job (eg. compiling code or other manipulations of data) or your compute application requires interactive control, you should request a dedicated interactive node for this work.
 
-Interactive resources are requested by submitting an "interactive" job to the scheduler. Interactive jobs will provide you a command line on a compute resource that you can use just like you would the command line on the login node. The difference is that the scheduler has dedicated the requested resources to your job and you can run your interactive commands without having to worry about impacting other users on the login node.
+Interactive resources are requested by submitting an "interactive" job to the scheduler. Interactive jobs will provide you a command line on a compute resource that you can use just like you would the command line on the login node. The difference is that the scheduler has dedicated the requested resources to your job and you can run your interactive commands without having to worry about impacting other researchers on the login node.
 
 Interactive jobs, that can be run on command line, are requested with the **srun** command.
 
@@ -385,18 +385,18 @@ Please note, sinteractive starts your shell in a screen session. Screen is a ter
 
 ### Privacy
 
-**Do not store sensitive information on this filesystem. It is not encrypted.** Note that your data will be stored on the cluster filesystem, and while not accessible to ordinary users, it could be accessible to the cluster administrator(s).
+**Do not store sensitive information on this filesystem. It is not encrypted.** Note that your data will be stored on the cluster filesystem, and while not accessible to ordinary researchers, it could be accessible to the cluster administrator(s).
 
 ### File and Directory Permissions
 
-The default permissions for all user data storage locations described below are as follows. In these descriptions, the "$USER" variable should be replaced with the user's account name string:
+The default permissions for all researcher data storage locations described below are as follows. In these descriptions, the "$USER" variable should be replaced with the researcher's account name string:
 
-- /home/$USER - the owner ($USER) of the directory can read, write/delete, and list files. No other users or groups have permissions to this directory.
-- /data/user/$USER - the owner ($USER) of the directory can read, write/delete, and list files. No other users or groups have permissions to this directory.
-- /scratch/$USER - the owner ($USER) of the directory can read, write/delete, and list files. No other users or groups have permissions to this directory.
-- /data/projects/<projectname> - a PI can request project space for their lab or specific collaborations. The project directory is created with the PI/requestor as the user-owner and a dedicated collaboration group as the group-owner. The PI and all members of the dedicated collaboration group have can read, write/delete, and list files. No privileges are granted to other users of the system. Additional controls can be implemented via access control lists (ACLs). The PI/requestor can modify the ACLs to allow additional access to specific users.
+- /home/$USER - the owner ($USER) of the directory can read, write/delete, and list files. No other researchers or groups have permissions to this directory.
+- /data/researcher/$USER - the owner ($USER) of the directory can read, write/delete, and list files. No other researchers or groups have permissions to this directory.
+- /scratch/$USER - the owner ($USER) of the directory can read, write/delete, and list files. No other researchers or groups have permissions to this directory.
+- /data/projects/<projectname> - a PI can request project space for their lab or specific collaborations. The project directory is created with the PI/requestor as the researcher-owner and a dedicated collaboration group as the group-owner. The PI and all members of the dedicated collaboration group have can read, write/delete, and list files. No privileges are granted to other researchers of the system. Additional controls can be implemented via access control lists (ACLs). The PI/requestor can modify the ACLs to allow additional access to specific researchers.
 
-These permissions are the default configuration. While it is possible to modify these permissions or change the group owner of a file to any group to which a user belongs, users are encouraged to work within the default configuration and contact support@listserv.uab.edu if the default permissions are not adequate. Setting up a collaboration group and associated project directory can address most collaboration need while keep data access restricted to the minimum necessary users for the collaboration.
+These permissions are the default configuration. While it is possible to modify these permissions or change the group owner of a file to any group to which a researcher belongs, researchers are encouraged to work within the default configuration and contact support@listserv.uab.edu if the default permissions are not adequate. Setting up a collaboration group and associated project directory can address most collaboration need while keep data access restricted to the minimum necessary researchers for the collaboration.
 
 Additional background on Linux file system permissions can be found here:
 
@@ -406,7 +406,7 @@ Additional background on Linux file system permissions can be found here:
 
 ### No Automatic Backups
 
-There is no automatic back up of any user data on the cluster in home, data, or scratch. At this time, all user data back up processes are defined and managed by each user and/or lab. Given that data backup demands vary widely between different users, groups, and research domains, this approach enables those who are most familiar with the data to make appropriate decisions based on their specific needs.
+There is no automatic back up of any researcher data on the cluster in home, data, or scratch. At this time, all researcher data back up processes are defined and managed by each researcher and/or lab. Given that data backup demands vary widely between different researchers, groups, and research domains, this approach enables those who are most familiar with the data to make appropriate decisions based on their specific needs.
 
 For example, if a group is working with a large shared data set that is a local copy of a data set maintained authoritatively at a national data bank, maintaining a local backup is unlikely to be a productive use of limited storage resources, since this data could potentially be restored from the authoritative source. If, however, you are maintaining a unique source of data of which yours is the only copy, then maintaining a backup is critical if you value that data set. It's worth noting that while this "uniqueness" criteria may not apply to the data you analyze, it may readily apply to the codes that define your analysis pipelines.
 
@@ -429,7 +429,7 @@ Research Computing policy requires that all bulky input and output must be locat
 **Important Information:**
 
 - Scratch space (network and local) **is not backed up**.
-- Research Computing expects each user to keep their scratch areas clean. The cluster scratch area are not to be used for archiving data.
+- Research Computing expects each researcher to keep their scratch areas clean. The cluster scratch area are not to be used for archiving data.
 
 Cheaha has two types of scratch space, network mounted and local.
 
@@ -476,7 +476,7 @@ The following is an array job example that uses $LOCAL_SCRATCH by transferring t
 # Set your email address and request notification when you job is complete or if it fails
 #
 #SBATCH --mail-type=FAIL
-#SBATCH --mail-user=YOUR_EMAIL_ADDRESS
+#SBATCH --mail-researcher=YOUR_EMAIL_ADDRESS
 
 module load R/3.2.0-goolf-1.7.20
 
@@ -505,15 +505,15 @@ echo "Copied results from local $LOCAL_SCRATCH/$SLURM_ARRAY_TASK_ID to network -
 
 ### Project Storage
 
-Cheaha has a location where shared data can be stored called $SHARE_PROJECT. As with user scratch, this area **is not backed up**!
+Cheaha has a location where shared data can be stored called $SHARE_PROJECT. As with researcher scratch, this area **is not backed up**!
 
 This is helpful if a team of researchers must access the same data. Please open a help desk ticket to request a project directory under $SHARE_PROJECT.
 
 ### Uploading Data
 
-**Do not store sensitive information on this filesystem. It is not encrypted.** Note that your data will be stored on the cluster filesystem, and while not accessible to ordinary users, it could be accessible to the cluster administrator(s). Data can be moved onto the cluster (pushed) from a remote client (ie. you desktop) via SCP or SFTP. Data can also be downloaded to the cluster (pulled) by issuing transfer commands once you are logged into the cluster. Common transfer methods are `wget <URL>`, FTP, or SCP, and depend on how the data is made available from the data provider.
+**Do not store sensitive information on this filesystem. It is not encrypted.** Note that your data will be stored on the cluster filesystem, and while not accessible to ordinary researchers, it could be accessible to the cluster administrator(s). Data can be moved onto the cluster (pushed) from a remote client (ie. you desktop) via SCP or SFTP. Data can also be downloaded to the cluster (pulled) by issuing transfer commands once you are logged into the cluster. Common transfer methods are `wget <URL>`, FTP, or SCP, and depend on how the data is made available from the data provider.
 
-Large data sets should be staged directly to your $USER_SCRATCH directory so as not to fill up $HOME. If you are working on a data set shared with multiple users, it's preferable to request space in $SHARE_PROJECT rather than duplicating the data for each user.
+Large data sets should be staged directly to your $USER_SCRATCH directory so as not to fill up $HOME. If you are working on a data set shared with multiple researchers, it's preferable to request space in $SHARE_PROJECT rather than duplicating the data for each researcher.
 
 ## Environment Modules
 
@@ -724,7 +724,7 @@ vim helloworld.job
 # Set your email address and request notification when you job is complete or if it fails
 #
 #SBATCH --mail-type=FAIL
-#SBATCH --mail-user=$USER@uab.edu
+#SBATCH --mail-researcher=$USER@uab.edu
 
 ./helloworld.sh
 ```
@@ -826,7 +826,7 @@ $ vi helloworld.job
 # Set your email address and request notification when you job is complete or if it fails
 #
 #SBATCH --mail-type=FAIL
-#SBATCH --mail-user=YOUR_EMAIL_ADDRESS
+#SBATCH --mail-researcher=YOUR_EMAIL_ADDRESS
 
 module load OpenMPI/1.8.8-GNU-4.9.3-2.25
 mpirun -np $SLURM_NTASKS helloworld_gnu_openmpi
@@ -865,7 +865,7 @@ The job submit scripts (sbatch scripts) are actually bash shell scripts in their
 
 The following example is a simple variation on the serial job above. All we will do is convert our Slurm job script into a command called helloworld that calls the helloworld.sh command.
 
-If the first line of a file is #!/bin/bash and that file is executable, the shell will automatically run the command as if were any other system command, eg. ls. That is, the ".sh" extension on our HelloWorld.sh script is completely optional and is only meaningful to the user.
+If the first line of a file is #!/bin/bash and that file is executable, the shell will automatically run the command as if were any other system command, eg. ls. That is, the ".sh" extension on our HelloWorld.sh script is completely optional and is only meaningful to the researcher.
 
 Copy the serial helloworld.job script to a new file, add a the special #!/bin/bash as the first line, and make it executable with the following command (note: those are single quotes in the echo command):
 
@@ -922,7 +922,7 @@ To avoid having to use the "./" prefix, just add the current directory to your P
 # Set your email address and request notification when you job is complete or if it fails
 #
 #SBATCH --mail-type=FAIL
-#SBATCH --mail-user=YOUR_EMAIL_ADDRESS
+#SBATCH --mail-researcher=YOUR_EMAIL_ADDRESS
 
 module load OpenMPI/1.8.8-GNU-4.9.3-2.25
 
@@ -973,7 +973,7 @@ $ vi R-example-array.job
 # Set your email address and request notification when you job is complete or if it fails
 #
 #SBATCH --mail-type=FAIL
-#SBATCH --mail-user=YOUR_EMAIL_ADDRESS
+#SBATCH --mail-researcher=YOUR_EMAIL_ADDRESS
 
 module load R/3.2.0-goolf-1.7.20 
 cd ~/jobs/ArrayExample/rep$SLURM_ARRAY_TASK_ID
@@ -1064,7 +1064,7 @@ $vi math.job
 # Set your email address and request notification when you job is complete or if it fails
 #
 #SBATCH --mail-type=FAIL
-#SBATCH --mail-user=$USER@uab.edu
+#SBATCH --mail-researcher=$USER@uab.edu
 ./math.sh
 ```
 
@@ -1118,13 +1118,13 @@ Singularity is designed so that you can use it within SLURM jobs and it does not
 #
 # Send mail to the email address when the job fails
 #SBATCH --mail-type=FAIL
-#SBATCH --mail-user=$USER@uab.edu
+#SBATCH --mail-researcher=$USER@uab.edu
 
 #Set your environment here
 module load Singularity/2.5.2-GCC-5.4.0-2.26
 
 #Run your singularity or any other commands here
-singularity exec -B /data/user/$USER /data/user/$USER/rc-training-sessions/neurodebian-neurodebian-master-latest.simg dcm2nii PATH_TO_YOUR_DICOM_FILES
+singularity exec -B /data/researcher/$USER /data/researcher/$USER/rc-training-sessions/neurodebian-neurodebian-master-latest.simg dcm2nii PATH_TO_YOUR_DICOM_FILES
 ```
 
 For [a more comprehensive introduction please see this tutorial](https://gitlab.rc.uab.edu/rc-training-sessions/singularity_containers).

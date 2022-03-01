@@ -18,7 +18,7 @@ Anaconda virtual environments are self-contained environments with necessary pac
 
 New virtual environments include a few very common libraries such as scikit-learn, pandas, numpy, and scipy by default. However, most projects will need to install some external libraries as well using `pip` or `conda`.
 
-Here, we will go through instructions for creating and managing Anaconda environments including installing new libraries. More complete information on this process can be found at the [Anaconda documentation](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#).
+Here, we will go through instructions for creating and managing Anaconda environments including installing new libraries. More complete information on this process can be found at the [Anaconda documentation](https://conda.io/projects/conda/en/latest/researcher-guide/tasks/manage-environments.html#).
 
 ### Create an Environment
 
@@ -36,7 +36,7 @@ If you are trying to replicate a pipeline or analysis from another person, you c
 conda create -n <env> -f <path/to/env.yml>
 ```
 
-By default, all of your conda environments are stored in `/home/<user>/.conda/envs`.
+By default, all of your conda environments are stored in `/home/<researcher>/.conda/envs`.
 
 ### Activate an Environment
 

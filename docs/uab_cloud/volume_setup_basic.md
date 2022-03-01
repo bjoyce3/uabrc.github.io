@@ -1,6 +1,6 @@
 # Basic Volume Setup
 
-These instructions are intended for users who want to setup a persistent volume for use across instances. To follow these instructions you'll need to have already setup an [Instance](instance_setup_basic.md).
+These instructions are intended for researchers who want to setup a persistent volume for use across instances. To follow these instructions you'll need to have already setup an [Instance](instance_setup_basic.md).
 
 ## Creating a Volume
 
@@ -148,7 +148,7 @@ Mounting a volume needs to be done once per instance it will be attached to. It 
 
     ``` bash
     sudo apt install acl # or yum install, etc., if not already installed
-    sudo setfacl -R -m u:<username>:rwx <directory>
+    sudo setfacl -R -m u:<researchername>:rwx <directory>
     ```
 
     ![!MINGW64 terminal. The acl package has been installed using the command sudo apt install acl. The access controls have been set on the mount point /mnt/my-volume using the sudo setfacl command.](./images/persistent_volumes_009.png)

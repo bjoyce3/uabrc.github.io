@@ -2,11 +2,11 @@
 
 ## Privacy
 
-**Do not store sensitive information on this filesystem. It is not encrypted.** Note that your data will be stored on the cluster filesystem, and while not accessible to ordinary users, it could be accessible to the cluster administrator(s).
+**Do not store sensitive information on this filesystem. It is not encrypted.** Note that your data will be stored on the cluster filesystem, and while not accessible to ordinary researchers, it could be accessible to the cluster administrator(s).
 
 ## No Automatic Backups
 
-There is no automatic back up of any user data on the cluster in home, data, or scratch. At this time, all user data back up processes are defined and managed by each user and/or lab. Given that data backup demands vary widely between different users, groups, and research domains, this approach enables those who are most familiar with the data to make appropriate decisions based on their specific needs.
+There is no automatic back up of any researcher data on the cluster in home, data, or scratch. At this time, all researcher data back up processes are defined and managed by each researcher and/or lab. Given that data backup demands vary widely between different researchers, groups, and research domains, this approach enables those who are most familiar with the data to make appropriate decisions based on their specific needs.
 
 For example, if a group is working with a large shared data set that is a local copy of a data set maintained authoritatively at a national data bank, maintaining a local backup is unlikely to be a productive use of limited storage resources, since this data could potentially be restored from the authoritative source. If, however, you are maintaining a unique source of data of which yours is the only copy, then maintaining a backup is critical if you value that data set. It's worth noting that while this "uniqueness" criteria may not apply to the data you analyze, it may readily apply to the codes that define your analysis pipelines.
 
@@ -17,36 +17,36 @@ Please review the data storage options provided by UAB IT for maintaining copies
 
 ## Directories on Cheaha
 
-Users are provided a high performance GPFS file system to store data, toolboxes, and other supporting files. The specific directories a user can access are described below. In these descriptions, the "$USER" variable should be replaced with the user's account name string.
+Researchers are provided a high performance GPFS file system to store data, toolboxes, and other supporting files. The specific directories a researcher can access are described below. In these descriptions, the "$USER" variable should be replaced with the researcher's account name string.
 
 ### Home Directory
 
-Each user has a personal directory found at `/home/$USER` (or `$HOME`). This is traditionally meant to store scripts and supporting files and toolboxes such as those relating to Anaconda virtual environments or R packages. The owner ($USER) of the directory can read, write/delete, and list files. No other users or groups have permissions to this directory.
+Each researcher has a personal directory found at `/home/$USER` (or `$HOME`). This is traditionally meant to store scripts and supporting files and toolboxes such as those relating to Anaconda virtual environments or R packages. The owner ($USER) of the directory can read, write/delete, and list files. No other researchers or groups have permissions to this directory.
 
-A user is limited to 5 TB of data across both their home directory and their user data directory (see below).
+A researcher is limited to 5 TB of data across both their home directory and their researcher data directory (see below).
 
-### User Data Directory
+### Researcher Data Directory
 
-Each user has another directory found at `/data/user/$USER` (or `$USER_DATA`) that can store datasets and results for a user's projects. The owner ($USER) of the directory can read, write/delete, and list files. No other users or groups have permissions to this directory.
+Each researcher has another directory found at `/data/researcher/$USER` (or `$USER_DATA`) that can store datasets and results for a researcher's projects. The owner ($USER) of the directory can read, write/delete, and list files. No other researchers or groups have permissions to this directory.
 
-A user is limited to 5 TB of data across both their home directory (see above)and their user data directory.
+A researcher is limited to 5 TB of data across both their home directory (see above)and their researcher data directory.
 
 !!! note
 
 <!-- markdownlint-disable-next-line -->
-    The home and user data directories are mirrored across storage locations to allow for emergency backup in case some of the drives fail. This is not meant to be a long-term backup solution as any data deleted by a user is deleted on the main drive and the mirrored drive.
+    The home and researcher data directories are mirrored across storage locations to allow for emergency backup in case some of the drives fail. This is not meant to be a long-term backup solution as any data deleted by a researcher is deleted on the main drive and the mirrored drive.
 
-    The mirrored system technically allows for over 5 TB of data to be stored but data cannot be recovered in case of an emergency storage failure. For data safety, do not store over 5 TB of data across user data and home directories.
+    The mirrored system technically allows for over 5 TB of data to be stored but data cannot be recovered in case of an emergency storage failure. For data safety, do not store over 5 TB of data across researcher data and home directories.
 
 ### Project Directory
 
-Shared data can be stored in a `/data/project/<project_name>` directory. The default storage size for a new project is 50TB. As with user scratch, this area **is not backed up**!
+Shared data can be stored in a `/data/project/<project_name>` directory. The default storage size for a new project is 50TB. As with researcher scratch, this area **is not backed up**!
 
 This is helpful if a team of researchers must access the same data. A PI can open a help desk ticket to request a project directory under `/data/project`.
 
-In order to add or remove a user's access to a project directory, the PI who requested the project space must create a support ticket.
+In order to add or remove a researcher's access to a project directory, the PI who requested the project space must create a support ticket.
 
-The PI and all members of the dedicated collaboration group have can read, write/delete, and list files. No privileges are granted to other users of the system. Additional controls can be implemented via access control lists (see the bash commands [setfacl](https://linux.die.net/man/1/setfacl) and [getfacl](https://linux.die.net/man/1/getfacl)). The PI/requestor can modify the ACLs to allow additional access to specific users.
+The PI and all members of the dedicated collaboration group have can read, write/delete, and list files. No privileges are granted to other researchers of the system. Additional controls can be implemented via access control lists (see the bash commands [setfacl](https://linux.die.net/man/1/setfacl) and [getfacl](https://linux.die.net/man/1/getfacl)). The PI/requestor can modify the ACLs to allow additional access to specific researchers.
 
 #### Sloss
 
@@ -54,7 +54,7 @@ A special location under `/data/project/sloss` to store projects that are, at mo
 
 ### Scratch
 
-Two types of scratch space are provided for analyses currently being ran, network-mounted and local. These are spaces shared across users (though one user still cannot access another user's files without permission) and as such, data should be moved out of scratch when the analysis is finished.
+Two types of scratch space are provided for analyses currently being ran, network-mounted and local. These are spaces shared across researchers (though one researcher still cannot access another researcher's files without permission) and as such, data should be moved out of scratch when the analysis is finished.
 
 !!! note
 
@@ -63,14 +63,14 @@ Two types of scratch space are provided for analyses currently being ran, networ
 
 #### Network Scratch
 
-All users have access to a large, temporary, work-in-progress directory for storing data, called a scratch directory in `/data/scratch/$USER` or `$USER_SCRATCH`. Use this directory to store very large datasets for a short period of time and to run your jobs. The maximum amount of data a single user can store in network scratch is 100 TB at once.
+All researchers have access to a large, temporary, work-in-progress directory for storing data, called a scratch directory in `/data/scratch/$USER` or `$USER_SCRATCH`. Use this directory to store very large datasets for a short period of time and to run your jobs. The maximum amount of data a single researcher can store in network scratch is 100 TB at once.
 
 Network scratch is available on the login node and each compute node. This storage is a GPFS high performance file system providing roughly 1 PB of network scratch storage. If using scratch, this should be your jobs' primary working directory, unless the job would benefit from local scratch (see below).
 
 !!! warning
 
 <!-- markdownlint-disable-next-line -->
-    Research Computing expects each user to keep their scratch areas clean. **The cluster scratch areas are not to be used for archiving data.** In order to keep scratch clear and usable for everyone, files older than 28 days will be automatically deleted.
+    Research Computing expects each researcher to keep their scratch areas clean. **The cluster scratch areas are not to be used for archiving data.** In order to keep scratch clear and usable for everyone, files older than 28 days will be automatically deleted.
 
 #### Local Scratch
 
@@ -108,7 +108,7 @@ The following is an array job example that uses `$LOCAL_SCRATCH` by transferring
 # Set your email address and request notification when you job is complete or if it fails
 #
 #SBATCH --mail-type=FAIL
-#SBATCH --mail-user=YOUR_EMAIL_ADDRESS
+#SBATCH --mail-researcher=YOUR_EMAIL_ADDRESS
 
 module load R/3.2.0-goolf-1.7.20
 

@@ -38,7 +38,7 @@ A Key Pair is required for SSH access to OpenStack instances for security reason
 
 Using a password protected Key Pair is highly recommended for additional security, as it buys time to revoke a key if it is compromised by an attacker. Currently, this is only possible by uploading a custom public key generated on your local machine.
 
-Good practice is to only use one key pair per person and per local machine. So if you have two computers, each one will need its own key pair. If you have two users, each will need their own key pair. Private keys are secrets and should not be passed around. Copying the key increases the risk of the system being compromised by an attacker.
+Good practice is to only use one key pair per person and per local machine. So if you have two computers, each one will need its own key pair. If you have two researchers, each will need their own key pair. Private keys are secrets and should not be passed around. Copying the key increases the risk of the system being compromised by an attacker.
 
 1. Click "Compute" in the left-hand navigation pane to open the fold-out menu.
 
@@ -262,7 +262,7 @@ If you are following the steps from top to bottom, then at this stage
 you should be able to SSH into your instance from on campus or on the
 UAB VPN. To do so be sure your local machine has ssh and then use the
 following command If you are using a different operating system, such as
-CentOS, replace the user `ubuntu` with `centos` or whatever is
+CentOS, replace the researcher `ubuntu` with `centos` or whatever is
 appropriate.
 
 ``` bash
